@@ -1,6 +1,6 @@
-# Identification-and-Multilabel-Toxic-Comment-Classification  
+# Identification-and-Multilabel-Toxic-Comment-Classification
 Discussing things you care about can be difficult. The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments. So classifying the user comments or opinions for toxicity is important to make effective and abuse free online social platforms. Here we experimented with various models to classify online comments/text to various toxic categories using Machine learning and Deep learning algorithms.  
-## Model Comparison  
+## Model Comparison
 A comparison of few models used in this repo(Deep learning model not included here but was best performer qqually to SVM). 
 | Category      | Acc NB             | Acc LogReg         | Acc SVM            | SVM advantage to NB   | SVM advantage to LogReg |
 |---------------|--------------------|--------------------|--------------------|-----------------------|-------------------------|
@@ -11,7 +11,7 @@ A comparison of few models used in this repo(Deep learning model not included he
 | insult        | 0.9665674447751841 | 0.9705467648441172 | 0.9707347642174526 | 0.004167319442268558  | 0.0001879993733354679   |
 | identity_hate | 0.9911013629954567 | 0.9918533604887984 | 0.991947360175466  | 0.000845997180009328  | 9.399968666767844e-05   |  
 
-## Test  
+## Test
 Let's test the model. Given the comment/text we will classify thme into various toxic categories.  
 ```
 def Execute(x_test, option=True):
@@ -38,7 +38,12 @@ The output:
 ```
 ['toxic','obscene','insult']
 ```  
-## Streamlit App  
-Clients and Customers rarely care about the underlining codebase.With that in mind a simple web app using Streamlit library have been built for interactive use.  
+## Streamlit App
+Clients and Customers rarely care about the underlining codebase.With that in mind a simple web app using Streamlit library have been built for interactive use. This app has not been deployed yet in the cloud.  
+To run this app, first you need to download this repo and in terminal/command promptt go to project directory and type:
+'''
+streamlit run app.py
+'''
 
-
+## References
+special credits for **Omdena**
