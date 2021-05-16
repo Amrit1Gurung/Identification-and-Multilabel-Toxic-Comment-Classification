@@ -9,5 +9,30 @@ A comparison of few models used in this repo(Deep learning model not included he
 | obscene       | 0.9721760927463575 | 0.977659407801974  | 0.9792887357042144 | 0.007112642957856852  | 0.0016293279022403517   |
 | threat        | 0.9976813410621964 | 0.9977753407488642 | 0.9977753407488642 | 9.399968666778946e-05 | 0.0                     |
 | insult        | 0.9665674447751841 | 0.9705467648441172 | 0.9707347642174526 | 0.004167319442268558  | 0.0001879993733354679   |
-| identity_hate | 0.9911013629954567 | 0.9918533604887984 | 0.991947360175466  | 0.000845997180009328  | 9.399968666767844e-05   |
+| identity_hate | 0.9911013629954567 | 0.9918533604887984 | 0.991947360175466  | 0.000845997180009328  | 9.399968666767844e-05   |  
+
+## Test  
+Let's test the model. Given the comment/text we will classify thme into various toxic categories.  
+```
+def Execute(x_test, option=True):
+    category_list = ['toxic', 'severe_toxic', 'obscene', 'insult', 'threat', 'identity_hate']
+    accuracies=[]
+    selected_category = []
+    if option:
+        for model, category in tqdm(zip(model_list,category_list)):
+            prediction = model.predict(x_test)
+            if len(x_test) == 1:
+                if option:
+                    if prediction[0] == 1:
+                        selected_category.append(category)
+            else:
+                pass
+    return selected_category
+    
+test_string = [""""I don't give the fuck those goddamn morons says."""]
+test_str = preprocess(test_string[0])
+tfidf_test_string = tfidf.transform(list(test_string)).toarray()
+acc = Execute(x_test = tfidf_test_string)
+```
+
 
