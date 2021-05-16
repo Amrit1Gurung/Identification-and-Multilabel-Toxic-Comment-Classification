@@ -33,6 +33,12 @@ test_string = [""""I don't give the fuck those goddamn morons says."""]
 test_str = preprocess(test_string[0])
 tfidf_test_string = tfidf.transform(list(test_string)).toarray()
 acc = Execute(x_test = tfidf_test_string)
+```  
+The output:  
 ```
+['toxic','obscene','insult']
+```  
+## Streamlit App  
+Clients and Customers rarely care about the underlining codebase.With that in mind a simple web app using Streamlit library have been built for interactive use.  
 
 
