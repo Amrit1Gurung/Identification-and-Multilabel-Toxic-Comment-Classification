@@ -40,10 +40,10 @@ The output:
 ```  
 ## Streamlit App
 Clients and Customers rarely care about the underlining codebase.With that in mind a simple web app using Streamlit library have been built for interactive use. This app has not been deployed yet in the cloud.  
-To run this app, first you need to download this repo and in terminal/command promptt go to project directory and type:
-'''
+To run this app, first you need to download this repo and in terminal/command promptt go to project directory and type:  
+```
 streamlit run app.py
-'''
+```
 
 ## References
 special credits for **Omdena**
