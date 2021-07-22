@@ -46,4 +46,20 @@ streamlit run app.py
 ```
 
 ## References
-special credits for **Omdena**
+special credits for **Omdena**  
+
+[1] Jiawei Han, Micheline kamber, Jian Pei. ‘’ Data Mining concepts
+and Techniques’’. Third Edition , Morgan kaufmann Publisher, 2012. (page no. 350 to 355 and 408 
+to 415). 
+[2] Durgesh Srivastava, Lekha Bhambhu. “Data Classification using Support Vector Machine”. 
+Article in Journal of Theoretical and Applied Information Technology · February 2010.  
+[3] Christopher Olah ‘’ Understanding LSTM Networks’’. Colah’s blog, Posted on August 27, 2015.   
+[4] Sebastian Laverde, ‘’Automatic Classification of Sexual Harassment Cases’’. A NLP based project 
+by Omdena.  
+[5] Chu, T & Jue, K. ‘’Comment Abuse Classification with Deep Learning’’.  
+[6] Kevin Khieu and Neha Narwal. ‘’Detecting and Classifying Toxic Comments’’.  
+[7] Stanford CS244N lectures series on Natural Language Processing with Deep Learning. (lecture 5 
+and 6). 
+[8] Analytics Vidhya’s article on ‘’An Intuitive Understanding of Word Embedding: From 
+Count Vector to Word2Vec’’.  
+
